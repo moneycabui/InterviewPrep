@@ -1,3 +1,3 @@
 # InterviewPrep
 
-A repo for interview prop and improving problem solving skills
+A repo designed for interview prepping and improving problem solving skills
