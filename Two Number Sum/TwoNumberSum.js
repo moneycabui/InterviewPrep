@@ -20,10 +20,10 @@ function twoNumberSum(array, targetSum) {
   return result;
 }
 
-// // Do not edit the line below.
-// exports.twoNumberSum = twoNumberSum;
+// Do not edit the line below.
+exports.twoNumberSum = twoNumberSum;
 
-// Test
+// Test Case 1
 const array1 = [3, 5, -4, 8, 11, 1, -1, 6];
 const targetSum1 = 10;
 const test1 = twoNumberSum(array1, targetSum1);
