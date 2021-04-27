@@ -1,0 +1,19 @@
+{
+  "name": "interviewprep",
+  "version": "1.0.0",
+  "description": "Coding challenges, interview preparation, and problem solving",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moneycabui/InterviewPrep.git"
+  },
+  "author": "Monica Bui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moneycabui/InterviewPrep/issues"
+  },
+  "homepage": "https://github.com/moneycabui/InterviewPrep#readme"
+}
