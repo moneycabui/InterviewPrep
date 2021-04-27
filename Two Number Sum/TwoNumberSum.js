@@ -2,7 +2,7 @@
 
 // Note that the target sum has to be obtained by summing two different integers in the array; you can't add a single integer to itself in order to obtain the target sum.
 
-// I: non-empty array
+// I: non-empty array and target sum
 // O: array of numbers that sum up to target sum or empty array
 
 function twoNumberSum(array, targetSum) {
