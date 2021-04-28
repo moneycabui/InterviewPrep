@@ -17,6 +17,12 @@ function twoNumberSum(array, targetSum) {
     }
   }
 
+  // Optimized solution:
+  // For each of the numbers
+    // Convert to object - stringify to key
+    // Look up target sum - number
+    // Push numbers to result array
+
   return result;
 }
 
@@ -26,6 +32,40 @@ exports.twoNumberSum = twoNumberSum;
 // Test Case 1
 const array1 = [3, 5, -4, 8, 11, 1, -1, 6];
 const targetSum1 = 10;
-const test1 = twoNumberSum(array1, targetSum1);
+const test1 = twoNumberSum(array1, targetSum1); // [11, -1]
 
 console.log(test1);
+
+// Experimentation:
+
+// Working solution:
+// function twoNumberSum(array, targetSum) {
+//   // Write your code here.
+//   let result = [];
+
+//   for (let i = 0; i < array.length; i++) {
+//     for (let j = 0; j < array.length; j++) {
+//       if (i !== j && ((array[i] + array[j]) === targetSum)) {
+//         result.push(array[i]);
+//       }
+//     }
+//   }
+
+//   return result;
+// }
+
+// Version 2:
+// function twoNumberSum(array, targetSum) {
+//   // Write your code here.
+//   let result = [];
+
+//   for (let i = 0; i < array.length; i++) {
+//     for (let j = i + 1; j < array.length; j++) {
+//       if ((array[i] + array[j]) === targetSum) {
+//         result.push(array[i]);
+//       }
+//     }
+//   }
+
+//   return result;
+// }
