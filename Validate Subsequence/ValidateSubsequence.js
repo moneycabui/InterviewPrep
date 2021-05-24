@@ -6,7 +6,16 @@
 // O: Boolean - whether or not sequence is part of array of numbers
 
 function isValidSubsequence(array, sequence) {
-
+	let sequenceIndex = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === sequence[sequenceIndex]) {
+      sequenceIndex ++;
+    }
+    if (sequenceIndex === sequence.length) {
+      break;
+    }
+  }
+  return (sequenceIndex === sequence.length);
 }
 
 // Do not edit the line below.
@@ -18,3 +27,21 @@ const sequence1 = [1, 6, -1, 10];
 const test1 = isValidSubsequence(array1, sequence1);
 
 console.log(test1);
+
+const array2 = [5, 1, 22, 25, 6, -1, 8, 10];
+const sequence2 = [5, 1, 22, 25, 6, -1, 8, 10];
+const test2 = isValidSubsequence(array2, sequence2);
+
+console.log(test2);
+
+const array3 = [5, 1, 22, 25, 6, -1, 8, 10];
+const sequence3 = [5, 1, 22, 6, -1, 8, 10];
+const test3 = isValidSubsequence(array3, sequence3);
+
+console.log(test3);
+
+
+// Notes:
+// Type of problem - reduce to a pattern
+// Recursion? Sort?
+// Graph? Tree? Data structures?
